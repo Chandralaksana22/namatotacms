@@ -1,0 +1,6 @@
+columns:
+    nama:
+        label: 'Nama Pemesan'
+        type: text
+        searchable: true
+        sortable: true

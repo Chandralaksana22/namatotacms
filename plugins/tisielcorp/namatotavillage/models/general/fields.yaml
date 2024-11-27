@@ -1,0 +1,55 @@
+fields:
+    name:
+        label: Title
+        span: auto
+        type: text
+    address:
+        label: Alamat
+        span: auto
+        type: text
+    description:
+        label: Deskripsi
+        size: large
+        span: full
+        type: richeditor
+    link_maps:
+        label: 'Link Lokasi'
+        span: auto
+        type: text
+    phone_number:
+        label: 'Nomor Telp (WhatsApp)'
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: full
+        type: text
+    social_media:
+        label: 'Social Media'
+        prompt: 'Add new item'
+        displayMode: accordion
+        span: full
+        type: repeater
+        form:
+            fields:
+                item:
+                    label: 'Nama Media Sosial'
+                    span: auto
+                    type: text
+                icon:
+                    label: 'Icon Sosial Media'
+                    mode: image
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
+                    type: mediafinder
+    images:
+        label: Gambar
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload

@@ -1,0 +1,10 @@
+name: BookingRoom
+form: $/tisielcorp/namatotavillage/models/bookingroom/fields.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\BookingRoom
+defaultRedirect: tisielcorp/namatotavillage/bookingroom
+create:
+    redirect: 'tisielcorp/namatotavillage/bookingroom/update/:id'
+    redirectClose: tisielcorp/namatotavillage/bookingroom
+update:
+    redirect: tisielcorp/namatotavillage/bookingroom
+    redirectClose: tisielcorp/namatotavillage/bookingroom

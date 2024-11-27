@@ -1,0 +1,7 @@
+columns:
+    nama:
+        label: Tamu
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true

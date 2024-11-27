@@ -1,0 +1,41 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    category:
+        label: Kategori
+        showSearch: true
+        span: auto
+        options:
+            Sosial: Sosial
+            Budaya: Budaya
+            Kuliner: Kuliner
+            Sejarah: Sejarah
+            Kegiatan: Kegiatan
+        type: dropdown
+    author:
+        label: Penulis
+        span: auto
+        type: text
+    post:
+        label: Post
+        size: large
+        span: full
+        type: richeditor
+    images:
+        label: Gambar
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

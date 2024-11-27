@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: Judul
+        type: text
+        searchable: true

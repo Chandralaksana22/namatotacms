@@ -1,0 +1,34 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    price:
+        label: Price
+        span: auto
+        type: text
+    link_book:
+        label: 'Link book'
+        span: auto
+        type: text
+    description:
+        label: Deskripsi
+        size: large
+        span: full
+        type: richeditor
+    images:
+        label: 'Foto Souvenir'
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

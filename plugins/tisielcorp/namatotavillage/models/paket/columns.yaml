@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'Nama Paket'
+        type: text
+        searchable: true

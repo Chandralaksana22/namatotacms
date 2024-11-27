@@ -1,0 +1,38 @@
+fields:
+    nama:
+        label: Nama
+        span: auto
+        readOnly: 1
+        type: text
+    email:
+        label: Email
+        span: auto
+        readOnly: 1
+        type: text
+    date:
+        label: 'Tanggal Masuk'
+        span: auto
+        readOnly: 1
+        type: text
+    number:
+        label: 'Nomor HP'
+        span: auto
+        readOnly: 1
+        type: text
+    people:
+        label: 'Jumlah Tamu'
+        span: auto
+        readOnly: 1
+        type: text
+    item:
+        label: 'Nama Penginapan'
+        span: auto
+        readOnly: 1
+        type: text
+    enquiry:
+        label: Pesan
+        size: large
+        span: full
+        disabled: 0
+        readOnly: 1
+        type: textarea

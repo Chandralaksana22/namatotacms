@@ -1,0 +1,10 @@
+name: Penginapan
+form: $/tisielcorp/namatotavillage/models/homestay/fields.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\Homestay
+defaultRedirect: tisielcorp/namatotavillage/penginapan
+create:
+    redirect: 'tisielcorp/namatotavillage/penginapan/update/:id'
+    redirectClose: tisielcorp/namatotavillage/penginapan
+update:
+    redirect: tisielcorp/namatotavillage/penginapan
+    redirectClose: tisielcorp/namatotavillage/penginapan

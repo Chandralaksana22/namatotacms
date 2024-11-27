@@ -1,0 +1,10 @@
+name: Booking
+form: $/tisielcorp/namatotavillage/models/book/fields.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\Book
+defaultRedirect: tisielcorp/namatotavillage/booking
+create:
+    redirect: 'tisielcorp/namatotavillage/booking/update/:id'
+    redirectClose: tisielcorp/namatotavillage/booking
+update:
+    redirect: tisielcorp/namatotavillage/booking
+    redirectClose: tisielcorp/namatotavillage/booking

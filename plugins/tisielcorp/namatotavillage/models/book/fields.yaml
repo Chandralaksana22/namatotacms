@@ -1,0 +1,30 @@
+fields:
+    item:
+        label: Paket
+        span: full
+        type: text
+    nama:
+        label: Nama
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
+        type: text
+    date:
+        label: Date
+        span: auto
+        type: text
+    number:
+        label: Number
+        span: auto
+        type: text
+    people:
+        label: People
+        span: full
+        type: text
+    enquiry:
+        label: Enquiry
+        size: large
+        span: full
+        type: richeditor

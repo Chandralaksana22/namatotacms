@@ -1,0 +1,45 @@
+plugin:
+    name: 'tisielcorp.namatotavillage::lang.plugin.name'
+    description: 'tisielcorp.namatotavillage::lang.plugin.description'
+    author: 'Tisiel Corp'
+    icon: oc-icon-chain
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Informasi
+        url: tisielcorp/namatotavillage/general
+        icon: icon-leaf
+    main-menu-item2:
+        label: 'Paket Wisata'
+        url: tisielcorp/namatotavillage/paket
+        icon: icon-bullseye
+        sideMenu:
+            side-menu-item2:
+                label: 'List Paket'
+                url: tisielcorp/namatotavillage/listpaket
+                icon: icon-send
+            side-menu-item:
+                label: 'List Booking'
+                url: tisielcorp/namatotavillage/booking
+                icon: icon-tags
+    main-menu-item3:
+        label: Penginapan
+        url: tisielcorp/namatotavillage/penginapan
+        icon: icon-hotel
+        sideMenu:
+            side-menu-item2:
+                label: 'List Penginapan'
+                url: tisielcorp/namatotavillage/listpenginapan
+                icon: icon-ticket
+            side-menu-item:
+                label: 'List Booking'
+                url: tisielcorp/namatotavillage/bookingroom
+                icon: icon-tags
+    main-menu-item4:
+        label: Kerajinan
+        url: tisielcorp/namatotavillage/kerajinan
+        icon: icon-chain
+    main-menu-item5:
+        label: Postingan
+        url: tisielcorp/namatotavillage/blog
+        icon: icon-binoculars

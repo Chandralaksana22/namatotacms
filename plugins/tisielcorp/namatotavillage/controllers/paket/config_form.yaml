@@ -1,0 +1,11 @@
+name: Paket
+modelClass: TisielCorp\NamatotaVillage\Models\Paket
+form: $/tisielcorp/namatotavillage/models/paket/fields.yaml
+defaultRedirect: tisielcorp/namatotavillage/paket
+create:
+    redirect: 'tisielcorp/namatotavillage/paket/update/:id'
+    redirectClose: tisielcorp/namatotavillage/paket
+update:
+    redirect: tisielcorp/namatotavillage/paket
+    redirectClose: tisielcorp/namatotavillage/paket
+preview: {  }

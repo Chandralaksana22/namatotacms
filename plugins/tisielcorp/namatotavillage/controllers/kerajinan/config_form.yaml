@@ -1,0 +1,10 @@
+name: Kerajinan
+form: $/tisielcorp/namatotavillage/models/souvenir/fields.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\Souvenir
+defaultRedirect: tisielcorp/namatotavillage/kerajinan
+create:
+    redirect: 'tisielcorp/namatotavillage/kerajinan/update/:id'
+    redirectClose: tisielcorp/namatotavillage/kerajinan
+update:
+    redirect: tisielcorp/namatotavillage/kerajinan
+    redirectClose: tisielcorp/namatotavillage/kerajinan

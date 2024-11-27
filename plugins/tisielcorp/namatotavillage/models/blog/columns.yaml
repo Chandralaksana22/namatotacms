@@ -1,0 +1,14 @@
+columns:
+    name:
+        label: 'Judul Postingan'
+        type: text
+        searchable: true
+        sortable: true
+    like:
+        label: 'Jumlah Suka'
+        type: text
+        sortable: true
+    view:
+        label: 'Total Pengunjung'
+        type: text
+        sortable: true

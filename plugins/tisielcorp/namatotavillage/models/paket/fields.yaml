@@ -1,0 +1,86 @@
+fields:
+    name:
+        label: 'Nama Paket'
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    duration:
+        label: 'Durasi Paket'
+        span: auto
+        type: text
+    occupancy:
+        label: Kapasitas
+        span: auto
+        type: text
+    location:
+        label: Lokasi
+        span: auto
+        type: text
+    rate:
+        label: Harga
+        span: auto
+        type: text
+    description:
+        label: Deskripsi
+        size: large
+        span: full
+        type: richeditor
+    departure:
+        label: Kedatangan
+        span: full
+        type: text
+    include:
+        label: Layanan
+        prompt: 'Add new item'
+        displayMode: accordion
+        span: auto
+        type: repeater
+        form:
+            fields:
+                item:
+                    label: Layanan
+                    span: full
+                    type: text
+    exclude:
+        label: 'Tidak Termasuk Layanan'
+        prompt: 'Add new item'
+        displayMode: accordion
+        span: auto
+        type: repeater
+        form:
+            fields:
+                item:
+                    label: 'Tidak Termasuk Layanan'
+                    span: full
+                    type: text
+    plan:
+        label: 'Jadwal Kegiatan'
+        prompt: 'Add new item'
+        displayMode: accordion
+        span: full
+        type: repeater
+        form:
+            fields:
+                item:
+                    label: Waktu
+                    span: full
+                    type: text
+                kegiatan:
+                    label: Kegiatan
+                    span: full
+                    type: text
+    images:
+        label: Foto
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

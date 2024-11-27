@@ -1,0 +1,66 @@
+fields:
+    name:
+        label: 'Nama Penginapan'
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    price:
+        label: 'Harga Sewa'
+        span: full
+        type: text
+    link_book:
+        label: 'Link Pemesanan'
+        span: auto
+        type: text
+    size:
+        label: 'Ukuran Ruangan'
+        span: auto
+        type: text
+    occupancy:
+        label: 'Jumlah Tamu'
+        span: auto
+        type: text
+    type:
+        label: 'Type Penginapan'
+        span: auto
+        type: text
+    view:
+        label: Pemandangan
+        span: auto
+        type: text
+    location:
+        label: Lokasi
+        span: auto
+        type: text
+    description:
+        label: Deskripsi
+        size: large
+        span: full
+        type: richeditor
+    facilities:
+        label: Fasilitas
+        prompt: 'Add new item'
+        displayMode: accordion
+        span: full
+        type: repeater
+        form:
+            fields:
+                item:
+                    label: 'Nama Fasilitas'
+                    span: full
+                    type: text
+    images:
+        label: 'Foto Penginapan'
+        span: full
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

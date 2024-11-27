@@ -1,0 +1,12 @@
+list: $/tisielcorp/namatotavillage/models/book/columns.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\Book
+title: Booking
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'tisielcorp/namatotavillage/booking/update/:id'

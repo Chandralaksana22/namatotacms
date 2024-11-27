@@ -1,0 +1,10 @@
+name: General
+form: $/tisielcorp/namatotavillage/models/general/fields.yaml
+modelClass: TisielCorp\NamatotaVillage\Models\General
+defaultRedirect: tisielcorp/namatotavillage/general
+create:
+    redirect: 'tisielcorp/namatotavillage/general/update/:id'
+    redirectClose: tisielcorp/namatotavillage/general
+update:
+    redirect: tisielcorp/namatotavillage/general
+    redirectClose: tisielcorp/namatotavillage/general
