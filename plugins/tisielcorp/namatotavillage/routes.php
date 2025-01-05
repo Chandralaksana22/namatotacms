@@ -8,6 +8,7 @@ use TisielCorp\NamatotaVillage\Models\BookingRoom;
 use TisielCorp\NamatotaVillage\Models\General;
 use TisielCorp\NamatotaVillage\Models\Homestay;
 use TisielCorp\NamatotaVillage\Models\Paket;
+use TisielCorp\NamatotaVillage\Models\Souvenir;
 
 Route::prefix('api/v1')->group(function () {
 
@@ -70,7 +71,6 @@ Route::prefix('api/v1')->group(function () {
             ], 404);
         }
     });
-
     Route::post('booking-room', function (Request $request) {
         $validatedData = $request->validate([
             'nama'    => 'required|string',
@@ -132,4 +132,28 @@ Route::prefix('api/v1')->group(function () {
             ], 404);
         }
     });
+    Route::get('souvenir', function (Request $request) {
+        $souvenir = Souvenir::with('images')->get();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Souvenir retrieved successfully',
+            'data' => $souvenir,
+        ]);
+    });
+    Route::get('souvenir/{slug}', function ($slug) {
+    $souvenir = Souvenir::with('images')->where('slug', $slug)->first();
+
+    if (!$souvenir) {
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Souvenir not found',
+        ], 404);
+    }
+
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Souvenir retrieved successfully',
+        'data' => $souvenir,
+    ]);
+});
 });
