@@ -28,6 +28,23 @@ Route::prefix('api/v1')->group(function () {
             'data' => $paket,
         ]);
     });
+    Route::get('paket/{slug}', function ($slug) {
+        $paket = Paket::with('images')->where('slug', $slug)->first();
+
+        if ($paket) {
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Paket detail retrieved successfully',
+                'data' => $paket,
+            ]);
+        } else {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Paket not found',
+                'data' => null,
+            ], 404);
+        }
+    });
     Route::post('book', function (Request $request) {
         $validatedData = $request->validate([
             'nama'    => 'required|string',
@@ -141,19 +158,19 @@ Route::prefix('api/v1')->group(function () {
         ]);
     });
     Route::get('souvenir/{slug}', function ($slug) {
-    $souvenir = Souvenir::with('images')->where('slug', $slug)->first();
+        $souvenir = Souvenir::with('images')->where('slug', $slug)->first();
 
-    if (!$souvenir) {
+        if (!$souvenir) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Souvenir not found',
+            ], 404);
+        }
+
         return response()->json([
-            'status' => 'error',
-            'message' => 'Souvenir not found',
-        ], 404);
-    }
-
-    return response()->json([
-        'status' => 'success',
-        'message' => 'Souvenir retrieved successfully',
-        'data' => $souvenir,
-    ]);
-});
+            'status' => 'success',
+            'message' => 'Souvenir retrieved successfully',
+            'data' => $souvenir,
+        ]);
+    });
 });
