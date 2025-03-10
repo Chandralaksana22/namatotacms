@@ -9,6 +9,9 @@ use TisielCorp\NamatotaVillage\Models\General;
 use TisielCorp\NamatotaVillage\Models\Homestay;
 use TisielCorp\NamatotaVillage\Models\Paket;
 use TisielCorp\NamatotaVillage\Models\Souvenir;
+Route::get('/', function () {
+    return redirect('/backend');
+});
 
 Route::prefix('api/v1')->group(function () {
 
